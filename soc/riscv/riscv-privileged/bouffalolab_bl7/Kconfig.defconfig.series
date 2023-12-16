@@ -1,0 +1,17 @@
+# Nordic Semiconductor nRF51 MCU line
+
+# Copyright (c) 2023 George Daniel Mangum
+# SPDX-License-Identifier: Apache-2.0
+
+if SOC_SERIES_BL7X
+
+source "soc/riscv/riscv-privileged/bouffalolab_bl7/Kconfig.defconfig.bl7*"
+
+config SOC_SERIES
+	default "bouffalolab_bl7"
+
+config NUM_IRQS
+	default 127
+
+endif # SOC_SERIES_BL7x
+

@@ -1,0 +1,17 @@
+# Bouffalo Lab MCU series
+
+# Copyright (c) 2023 George Daniel Mangum
+# SPDX-License-Identifier: Apache-2.0
+
+choice
+	prompt "BL7x MCU Selection"
+	depends on SOC_SERIES_BL7X
+
+config SOC_BL706
+	select RISCV_ISA_RV32I
+	select RISCV_ISA_EXT_M
+	select RISCV_ISA_EXT_A
+	select RISCV_ISA_EXT_C
+	bool "Bouffalo Lab BL706"
+
+endchoice

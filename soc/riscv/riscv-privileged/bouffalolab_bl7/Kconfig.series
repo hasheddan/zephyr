@@ -1,0 +1,12 @@
+# Bouffalo Lab 7 series
+
+# Copyright (c) 2023 George Daniel Mangum
+# SPDX-License-Identifier: Apache-2.0
+
+config SOC_SERIES_BL7X
+	bool "Bouffalo Lab 7 series MCU"
+	select RISCV
+	select SOC_FAMILY_RISCV_PRIVILEGED
+	select RISCV_HAS_CLIC
+	help
+	  Enable support for BL7x MCU series

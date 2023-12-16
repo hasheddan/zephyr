@@ -1,0 +1,8 @@
+# Pinecil v2 board configuration
+
+# Copyright (c) 2023 George Daniel Mangum
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_PINECIL_V2
+	bool "Pinecil v2 Board"
+	depends on SOC_BL706

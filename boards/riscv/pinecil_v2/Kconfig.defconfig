@@ -1,0 +1,12 @@
+# Pinecil v2 board configuration
+
+# Copyright (c) 2023 George Daniel Mangum
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_PINECIL_V2
+
+config BOARD
+	default "pinecil_v2"
+
+endif # BOARD_PINECIL_V2
+

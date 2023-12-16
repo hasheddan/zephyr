@@ -1,0 +1,11 @@
+identifier: pinecil_v2
+name: Pinecil v2
+type: mcu
+arch: riscv32
+toolchain:
+  - zephyr
+supported:
+  - gpio
+  - i2c
+  - uart
+vendor: pine64

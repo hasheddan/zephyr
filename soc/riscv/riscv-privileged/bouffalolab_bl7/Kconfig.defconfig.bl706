@@ -1,0 +1,8 @@
+# Bouffalo Lab BL706 MCU
+
+# Copyright (c) 2023 George Daniel Mangum
+# SPDX-License-Identifier: Apache-2.0
+
+config SOC
+	default "BL706"
+	depends on SOC_BL706

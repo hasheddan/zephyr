@@ -1,0 +1,41 @@
+/*
+ * Copyright (c) 2023 George Daniel Mangum
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include <freq.h>
+
+/ {
+	cpus {
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		cpu: cpu@0 {
+			clock-frequency = <DT_FREQ_M(144)>;
+			compatible = "sifive,e24";
+			device_type = "cpu";
+			reg = <0>;
+			riscv,isa = "rv32imafcb";
+			status = "okay";
+		};
+	};
+	soc {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		ranges;
+		i2c0: i2c@4000A300 {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <0x4000A300 0x100>;
+			status = "disabled";
+		};
+
+		uart0: uart@4000A000 {
+			compatible = "bouffalolab,bl-uart";
+			reg = <0x4000A000 0x100>;
+			status = "disabled";
+		};
+	};
+};
+

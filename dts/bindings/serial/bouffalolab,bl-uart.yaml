@@ -1,0 +1,13 @@
+description: Bouffalo Lab UART
+
+compatible: "bouffalolab,bl-uart"
+
+include: [uart-controller.yaml, pinctrl-device.yaml, reset-device.yaml]
+
+properties:
+  reg:
+    required: true
+
+  interrupts:
+    required: true
+

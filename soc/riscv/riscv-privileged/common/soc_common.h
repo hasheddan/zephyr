@@ -30,6 +30,7 @@
 #endif
 
 /* Exception code Mask */
+#error CONFIG_RISCV_SOC_MCAUSE_EXCEPTION_MASK
 #define SOC_MCAUSE_EXP_MASK          CONFIG_RISCV_SOC_MCAUSE_EXCEPTION_MASK
 
 #ifndef _ASMLANGUAGE

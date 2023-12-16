@@ -55,8 +55,11 @@ Hints:
   - if your SoC family directory is '/foo/bar/soc/<ARCH>/my_soc_family', then add '/foo/bar' to SOC_ROOT, not the entire SoC family path
   - if in doubt, use absolute paths\n")
   endif()
+    message("${SOC_FAMILY}")
+    message(PROJECT_SOURCE_DIR="${root}/soc/${ARCH}/${SOC_PATH}")
 
   if(EXISTS ${root}/soc/${ARCH}/${SOC_PATH})
+    message(PROJECT_SOURCE_DIR="${root}/soc/${ARCH}/${SOC_PATH}")
     set(SOC_DIR ${root}/soc)
     break()
   endif()

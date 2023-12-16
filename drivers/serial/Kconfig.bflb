@@ -1,0 +1,10 @@
+# Copyright (c) 2023 George Daniel Mangum
+# SPDX-License-Identifier: Apache-2.0
+
+config UART_BFLB
+	bool "Bouffalo Lab UART"
+	default y
+	select SERIAL_HAS_DRIVER
+	help
+	  Enable Bouffalo Lab UART serial driver
+
